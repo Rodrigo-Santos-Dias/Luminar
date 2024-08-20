@@ -21,7 +21,7 @@ public class SwaggerConfig {
                 .info(new Info()
                         .title("Projeto Luminar")
                         .description("Projeto Luminar - Generation Brasil")
-                        .version("v0.0.1")
+                        .version("v0.0.2")
                         .license(new License()
                                 .name("Generation Brasil")
                                 .url("https://brazil.generation.org/"))
