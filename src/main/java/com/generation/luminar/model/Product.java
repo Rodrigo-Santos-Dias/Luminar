@@ -9,10 +9,11 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
-@Table(name = "tb_product")
-@Entity
 @Getter
 @Setter
+
+@Table(name = "tb_product")
+@Entity
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

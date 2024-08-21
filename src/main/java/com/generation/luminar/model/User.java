@@ -11,10 +11,12 @@ import org.hibernate.validator.constraints.NotBlank;
 
 import java.util.List;
 
-@Table(name = "tb_user")
-@Entity
 @Getter
 @Setter
+
+
+@Table(name = "tb_user")
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,7 +45,17 @@ public class User {
     @JsonIgnoreProperties("user")
     private List<Product> product;
 
-    //Deploy
+    public User(Long id, String name, String photo, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.photo = photo;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User() {
+    }
+//Deploy
 
 
 
