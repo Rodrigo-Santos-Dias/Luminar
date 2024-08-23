@@ -36,12 +36,11 @@ public class Product {
     private Double price;
 
 
-    @NotBlank(message = "O atributo imagem é obrigatório")
+
     private String image;
 
     @ManyToOne
     @JsonIgnoreProperties("products")
-    @NotBlank(message = "O atributo categoria é obrigatório")
     private Category category;
 
     @ManyToOne
