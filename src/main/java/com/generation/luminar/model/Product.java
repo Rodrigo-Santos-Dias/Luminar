@@ -8,6 +8,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
 
 @Getter
 @Setter
@@ -36,7 +37,7 @@ public class Product {
     private Double price;
 
 
-
+    @Lob
     private String image;
 
     @ManyToOne

@@ -5,6 +5,7 @@ import com.generation.luminar.model.UserLogin;
 import com.generation.luminar.repository.UserRepository;
 import com.generation.luminar.security.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,6 +21,7 @@ import java.util.Optional;
 public class UserService {
     @Autowired
     private UserRepository userRepository;
+
 
     @Autowired
     private JwtService jwtService;
